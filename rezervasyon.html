@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek</title>
+      <link rel="stylesheet" href="giris.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <ul class="menu">
+      <li><a href="safi giriş.html">Safi</a></li>
+      <li><a href="yemek.html">Menü</a></li>
+      <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="rezervasyon.html">Rezervasyon</a></li>
+    </ul>
+
+    <div class="tablo-kapsayici">
+    <table class="ozel-tablo" style="width: 90%; ; border-collapse: collapse;" border="0">
+    
+    <tr><td>Günler</td><td>Pazartesi</td><td>Salı</td><td>Çarşamba</td><td>Perşembe</td><td>Cuma</td><td>Cumartesi</td><td>Pazar</td></tr>
+    <tr><td>Saat</td><td>09:00-22:00</td><td>09:00-22:00</td><td>09:00-22:00</td><td>09:00-22:00</td><td>09:00-22:00</td><td>08:00-23:00</td><td>08:00-23:00</td></tr>
+    </table>
+    </div>
+
+    <div class="rezervasyon-sayfa-kapsayici">
+    
+   
+    <div class="rezervasyon-form-alani">
+      <h2 class="kategori-baslik">Masa Rezervasyonu</h2>
+      
+      <div class="rezervasyon-kart">
+        <p class="rezervasyon-aciklama">Safi lezzetlerini yerinde deneyimlemek için yerinizi hemen ayırtın.</p>
+        
+        <form class="rezervasyon-form">
+          <div class="form-satir">
+            <div class="form-grup">
+              <label>Ad Soyad</label>
+              <input type="text" placeholder="Adınız Soyadınız" required>
+            </div>
+            <div class="form-grup">
+              <label>Telefon Numarası</label>
+              <input type="tel" placeholder="05XX XXX XX XX" required>
+            </div>
+          </div>
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label>Tarih</label>
+              <input type="date" required>
+            </div>
+            <div class="form-grup">
+              <label>Saat</label>
+              <input type="time" required>
+            </div>
+          </div>
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label>Kişi Sayısı</label>
+              <select required>
+                <option value="1">1 Kişilik</option>
+                <option value="2" selected>2 Kişilik</option>
+                <option value="4">3-4 Kişilik</option>
+                <option value="6">5-6 Kişilik</option>
+                <option value="grup">Grup (7+ Kişi)</option>
+              </select>
+            </div>
+            <div class="form-grup">
+              <label>Masa Tercihi</label>
+              <select>
+                <option value="ic">İç Mekan</option>
+                <option value="teras">Teras</option>
+                <option value="bar">Bar Alanı</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grup">
+            <label>Özel İstek / Not</label>
+            <textarea rows="3" placeholder="Alerjenler veya özel bir kutlama notu..."></textarea>
+          </div>
+
+          <button type="submit" class="rezervasyon-buton">Masayı Ayırt</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="rezervasyon-animasyon-alani">
+      <div class="yuzen-kart">
+        <div class="isik-efekti"></div>
+        <img src="c:\Users\Lenovo\OneDrive\Masaüstü\c57e2028b816589f6c9e82d8c5d9b2db (1).jpg" alt="Safi Rezervasyon">
+        <div class="rezervasyon-rozet">
+          <span>🔥 Şefin Masası Sizi Bekliyor</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>

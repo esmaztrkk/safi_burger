@@ -1,0 +1,861 @@
+body {
+  background-color: #e0deb6;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+  margin: 35px;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(237, 71, 71);
+  font-weight: bold;
+}
+
+.menu li:first-child {
+  margin-right: 400px;
+}
+
+.menu li:first-child a {
+  font-size: 28px;
+  color: #e74c3c;
+}
+
+
+
+.galeri-container {
+  clear: both;
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  align-items: stretch;
+}
+
+.sol-kutu,
+.sag-kutu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.kare-resim,
+.buyuk-resim {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.kare-resim {
+  aspect-ratio: 1 / 1;
+}
+
+.buyuk-resim {
+  height: 100%;
+  min-height: 400px;
+}
+
+.resim-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.resim-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.resim-link:hover img {
+  opacity: 0.92;
+  transform: scale(1.03);
+}
+
+
+
+.ana-icerik {
+  clear: both;
+  width: calc(100% - 180px);
+  padding: 20px 0 40px 40px;
+  box-sizing: border-box;
+}
+
+.kategori-bolumu {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.kategori-baslik,
+.kategori-basligi {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 0 0 25px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #d93829;
+  display: inline-block;
+}
+
+
+
+.yemek-galeri-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+
+.yemek-kart {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.yemek-kart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.yemek-kart img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+
+
+.menu-container {
+  clear: both;
+  width: 90%;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.galeri-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+
+.icecek-kart {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icecek-kart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icecek-kart img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.icecek-kart .bilgi-kutusu {
+  padding-top: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.icecek-kart .bilgi-kutusu h4,
+.bilgi-kutusu h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.icecek-kart .bilgi-kutusu p,
+.bilgi-kutusu p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.icecek-kart .bilgi-kutusu span,
+.bilgi-kutusu span {
+  display: inline-block;
+  margin-top: auto;
+  font-size: 15px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.bilgi-kutusu {
+  padding-top: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+
+.akan-resim-kutu {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.akan-resim-icerik {
+  display: flex;
+  flex-direction: column;
+  animation: sonsuzAkar 12s linear infinite;
+}
+
+.akan-resim-icerik img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+@keyframes sonsuzAkar {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30%);
+  }
+}
+
+
+
+.iletisim-sayfa-kapsayici,
+.hakkimizda-sayfa-kapsayici,
+.rezervasyon-sayfa-kapsayici {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  max-width: 1300px;
+  margin: 30px auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.iletisim-sol-alan,
+.hakkimizda-sol-alan,
+.rezervasyon-form-alani {
+  flex: 1.3;
+  min-width: 0;
+}
+
+.iletisim-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.iletisim-bilgi-kutusu,
+.iletisim-form-kutusu,
+.hakkimizda-hikaye-kart,
+.rezervasyon-kart {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.iletisim-bilgi-kutusu h3,
+.iletisim-form-kutusu h3,
+.hikaye-baslik {
+  margin: 0 0 12px;
+  font-size: 19px;
+  color: #2b2b2b;
+  border-bottom: 2px solid #ffb8b8;
+  padding-bottom: 6px;
+}
+
+.iletisim-bilgi-kutusu > p,
+.rezervasyon-aciklama {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.bilgi-item {
+  margin-bottom: 12px;
+}
+
+.bilgi-item strong {
+  display: block;
+  font-size: 13px;
+  color: #e74c3c;
+  margin-bottom: 2px;
+}
+
+.bilgi-item p {
+  margin: 0;
+  font-size: 13px;
+  color: #444;
+}
+
+
+
+.form-grup {
+  margin-bottom: 12px;
+}
+
+.form-grup label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.form-grup input,
+.form-grup select,
+.form-grup textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-grup input:focus,
+.form-grup select:focus,
+.form-grup textarea:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+}
+
+.form-satir {
+  display: flex;
+  gap: 15px;
+}
+
+.form-satir .form-grup {
+  flex: 1;
+}
+
+
+
+.gonder-buton,
+.rezervasyon-buton {
+  width: 100%;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.rezervasyon-buton {
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.gonder-buton:hover,
+.rezervasyon-buton:hover {
+  background-color: #c20000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(194, 0, 0, 0.3);
+}
+
+
+
+.iletisim-sag-gorsel,
+.hakkimizda-sag-gorsel {
+  flex: 0.85;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-40px) scale(0.96);
+  animation: kartGelis 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.25)
+    0.1s forwards;
+}
+
+.iletisim-sag-gorsel img,
+.hakkimizda-sag-gorsel img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #c20000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  display: block;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iletisim-sag-gorsel img:hover,
+.hakkimizda-sag-gorsel img:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(194, 0, 0, 0.25);
+}
+
+
+
+.hikaye-paragraf {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 12px;
+}
+
+.hikaye-paragraf:last-child {
+  margin-bottom: 0;
+}
+
+.kurallar-izgarasi {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.kural-kart {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  border-radius: 16px;
+  padding: 18px 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kural-kart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(194, 0, 0, 0.15);
+}
+
+.kural-ikon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.kural-kart h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e74c3c;
+  margin: 0 0 6px;
+}
+
+.kural-kart p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #666;
+  margin: 0;
+}
+
+
+
+.rezervasyon-form-alani {
+  animation: formGiris 0.8s ease-out forwards;
+}
+
+.rezervasyon-kart {
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.rezervasyon-animasyon-alani {
+  flex: 0.8;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-40px) scale(0.96);
+  animation: kartGelis 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.25)
+    0.1s forwards;
+}
+
+.yuzen-kart {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  animation: burgerFloat 4s ease-in-out infinite;
+}
+
+.yuzen-kart img,
+.rezervasyon-animasyon-alani img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #c20000;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: block;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yuzen-kart img:hover,
+.rezervasyon-animasyon-alani img:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(194, 0, 0, 0.25);
+}
+
+.isik-efekti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background: radial-gradient(
+    circle,
+    rgba(231, 76, 60, 0.35) 0%,
+    rgba(231, 76, 60, 0) 70%
+  );
+  z-index: 1;
+  border-radius: 50%;
+  animation: isikNabiz 3s ease-in-out infinite;
+}
+
+.rezervasyon-rozet {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #c20000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 3;
+}
+
+
+
+.tablo-kapsayici {
+  display: block;
+  width: fit-content;
+  max-width: 900px;
+  margin: 40px auto;
+  clear: both;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border: 1px solid #c20000;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.ozel-tablo {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.ozel-tablo thead tr {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.ozel-tablo th {
+  padding: 14px 18px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.ozel-tablo td {
+  padding: 12px 18px;
+  color: #333333;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #f2dcdb;
+}
+
+.ozel-tablo tbody tr:nth-of-type(even) {
+  background-color: #fdf8f8;
+}
+
+.ozel-tablo tbody tr:hover {
+  background-color: #fbebeb;
+  transition: background-color 0.2s ease;
+}
+
+.ozel-tablo tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ozel-tablo .fiyat-vurgu {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+
+
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.full-width-img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+@keyframes kartGelis {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes formGiris {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes burgerFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes isikNabiz {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.85;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu li {
+    float: none;
+    margin: 15px;
+  }
+
+  .menu li:first-child {
+    margin-right: 15px;
+  }
+
+  .galeri-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .ana-icerik {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .menu-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .icecek-kart,
+  .yemek-kart {
+    width: calc(50% - 13px);
+  }
+
+  .iletisim-sayfa-kapsayici,
+  .hakkimizda-sayfa-kapsayici,
+  .rezervasyon-sayfa-kapsayici {
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+  }
+
+  .iletisim-container {
+    flex-direction: column;
+  }
+
+  .iletisim-sag-gorsel,
+  .hakkimizda-sag-gorsel,
+  .rezervasyon-animasyon-alani {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .kurallar-izgarasi {
+    flex-wrap: wrap;
+  }
+
+  .kural-kart {
+    min-width: calc(50% - 8px);
+  }
+
+  .akan-resim-kutu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu li {
+    margin: 8px;
+    font-size: 17px;
+  }
+
+  .menu li:first-child a {
+    font-size: 24px;
+  }
+
+  .kategori-baslik,
+  .kategori-basligi {
+    font-size: 23px;
+  }
+
+  .galeri-wrapper,
+  .yemek-galeri-wrapper {
+    flex-direction: column;
+  }
+
+  .icecek-kart,
+  .yemek-kart {
+    width: 100%;
+  }
+
+  .form-satir {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .kurallar-izgarasi {
+    flex-direction: column;
+  }
+
+  .kural-kart {
+    width: 100%;
+  }
+
+  .full-width-img {
+    height: 300px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .kartlar-kapsayici, .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+  h1 {
+    font-size: 24px;
+  }
+  
+ 
+  body {
+    padding: 10px;
+  }
+}
